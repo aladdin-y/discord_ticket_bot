@@ -86,9 +86,10 @@ for (const folder of commandFolders)  {
 		}
 	}
 } 
+const config2 = require('dotenv').config();
 
 // Construct and prepare an instance of the REST module
-const rest = new REST().setToken(config.token);
+const rest = new REST().setToken(config2.token);
 
 // and deploy your commands!
 (async () => {
@@ -174,6 +175,6 @@ fs.readdirSync('./handlers').forEach((handler) => {
 });
 
 
-client.login(config.token)
+client.login(config2.token)
 
 
