@@ -3,10 +3,10 @@ const { QuickDB , MySQLDriver } = require("quick.db");
 async function getTable(tableName) {
   try {
     const mysqlDriver = new MySQLDriver({
-      host: "localhost",
-      user: "root",
-      password: "aladdin112233",
-      database: "all",
+      host: "",
+      user: "",
+      password: "",
+      database: "",
     });
 
     await mysqlDriver.connect(); // connect to the database **this is important**
