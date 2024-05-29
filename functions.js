@@ -4,10 +4,10 @@ const { EmbedBuilder } = require('discord.js');
 async function getTable(tableName) {
   try {
     const mysqlDriver = new MySQLDriver({
-      host: "localhost",
-      user: "root",
-      password: "aladdin112233",
-      database: "all",
+      host: "",
+      user: "",
+      password: "",
+      database: "",
     });
 
     await mysqlDriver.connect(); 
